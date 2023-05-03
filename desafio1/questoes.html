@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./questoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Questão 1</title>
+</head>
+<body>
+    <header>
+        <h1>Target Sistemas - Teste de Estágio</h1>
+        <p>Candidato: Felipe Batista de Souza</p>
+    </header>
+    <main class="questionsMain">
+        <section class="questionSection" id="question1">
+            <div class="questionsStatement">
+            
+                <h2>Questão 1</h2>
+                <button type="button" class="questionBtn next-question">></button>
+            </div>
+            <div class="questionsContent">
+                <p class="firstParagraph">Observe o trecho de código abaixo:</p>
+
+                <p><strong>int INDICE = 13, SOMA = 0, K = 0;
+                    enquanto K < INDICE faça{
+                    K = K + 1;
+                    SOMA = SOMA + K;
+                    }
+                    imprimir(SOMA);</strong>
+                </p>
+                <p>Ao final do processamento, qual será o valor da variável SOMA?</p>
+                <p>Resposta = Iniciando com o valor de K sendo 0 e pelo índice 0, fazemos: 0 + 1, 1 + 1, 2 + 1... Assim até o número de índice 12, onde K será igual a 13. Enquanto isso, a soma se inicia: 0 + 1, 1 + 2, 3 + 3... Com isso, temos: </p>
+                <p><strong>Índice: 0 1 2 3 4 5 6 7 8 9 10 11 12</strong></p>
+                <p> <strong>Valor de K: 1 2 3 4 5 6 7 8 9 10 11 12 13</strong></p>
+                <p> <strong>Valor de Soma: 1 3 6 10 15 21 28 36 45 55 66 78 91</strong></p>
+                <p>O valor da variável SOMA terá o valor 91 ao final do processamento.</p> 
+            </div>
+        </section>
+
+        <section class="questionSection" id="question2">
+            <div class="questionsStatement">
+                <button type="button" class="questionBtn previous-question"><</button>
+                <h2>Questão 2</h2>
+                <button type="button" class="questionBtn next-question">></button>
+            </div>
+            <div class="questionsContent">
+                <p> Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</p>
+                <p>Resposta = (o executável está em questão2.js) </p>
+                <p class="answer2">function fibonacci(number) {</p>
+                <p class="answer2">let a = 0, b = 1, c = 0;</p>
+                <p class="answer2">while (c < number) {</p>
+                <p class="answer2">c = a + b;</p>
+                <p class="answer2">a = b;</p>
+                <p class="answer2">b = c;</p>
+                <p class="answer2">}</p>
+                <p class="answer2">if (c === number) {</p>
+                <p class="answer2">return number + " pertence à sequência de Fibonacci.";</p>
+                <p class="answer2">} else {</p>
+                <p class="answer2">return number + " não pertence à sequência de Fibonacci.";</p>
+                <p class="answer2">}</p>
+                <p class="answer2">}</p>  
+            </div>
+        </section>
+
+        <section class="questionSection" id="question3">
+            <div class="questionsStatement">
+                <button type="button" class="questionBtn previous-question"><</button>
+                <h2>Questão 3</h2>
+                <button type="button" class="questionBtn next-question">></button>
+            </div>
+            <div class="questionsContent">
+                <p>Descubra a lógica e complete o próximo elemento:</p>
+                <p>a - 1, 3, 5, 7, ___</p>
+                <p>Resposta = Lógica: Os números na sequência são incrementados de 2 em 2. Próximo número: 9</p>
+                <p>b - 2, 4, 8, 16, 32, 64, ____</p>
+                <p>Resposta = Lógica: Os números na sequência são o dobro do anterior. Próximo número: 128  </p>
+                <p>c - 0, 1, 4, 9, 16, 25, 36, ____</p>
+                <p>Resposta = Lógica: Os números na sequência são o número correspondente do índice + números ímpares a partir do 1. Próximo número: 49 </p>
+                <p>d - 4, 16, 36, 64, ____</p>
+                <p>Resposta = Lógica: Os números na sequência são incrementados de 8 em 8, começando pelo valor de 12(12 + 8 = 20 -> 20 + 8 = 28...). Próximo número: 100  </p>
+                <p>e - 1, 1, 2, 3, 5, 8, ____</p>
+                <p>Resposta = Lógica: Os números na sequência são somados com o do indice anterior. Próximo número: 13</p>
+                <p>f - 2,10, 12, 16, 17, 18, 19, ____</p>
+                <p>Resposta = Lógica: Os números na sequência são números que começam com a letra D. Próximo número: 200</p> 
+            </div>
+        </section>
+
+        <section class="questionSection" id="question4">
+            <div class="questionsStatement">
+                <button type="button" class="questionBtn previous-question"><</button>
+                <h2>Questão 4</h2>
+                <button type="button" class="questionBtn next-question">></button>
+            </div>
+            <div class="questionsContent">
+                <p> Dois veículos (um carro e um caminhão) saem respectivamente de cidades opostas pela mesma rodovia. O carro de Ribeirão Preto em direção a Franca, a uma velocidade constante de 110 km/h e o caminhão de Franca em direção a Ribeirão Preto a uma velocidade constante de 80 km/h. Quando eles se cruzarem na rodovia, qual estará mais próximo a cidade de Ribeirão Preto?</p>
+                <p>IMPORTANTE:</p>
+                    
+                <p>a -  Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca.</p>
+                    
+                <p>b -  Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais para passar em cada um deles e o carro possui tag de pedágio (Sem Parar)</p>
+        
+                <p>c -  Explique como chegou no resultado.</p>
+                <p>Resposta = Estamos calculando a distância percorrida pelo caminhão considerando o tempo gasto em cada pedágio. Após isso, a distância restante para o caminhão chegar em Ribeirão Preto, subtraindo a distância percorrida pelo caminhão até o ponto de encontro da distância total. No próximo passo, calcular a distância percorrida pelo carro até o ponto de encontro com base no tempo total de viagem do caminhão e o tempo de viagem do carro. Finalmente, calculamos comparando as distâncias percorridas pelo caminhão e pelo carro a partir do ponto de encontro para determinar qual veículo está mais próximo de Ribeirão Preto.</p> 
+            </div>
+        </section>
+
+        <section class="questionSection" id="question5">
+            <div class="questionsStatement">
+                <button type="button" class="questionBtn previous-question"><</button>
+                <h2>Questão 5</h2>
+                <button type="button" class="questionBtn next-question">></button>
+            </div>
+            <div class="questionsContent">
+                <p>Escreva um programa que inverta os caracteres de um string.</p>
+                <p>IMPORTANTE:</p>
+                <p>a -  Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
+                </p>  
+                <p>b -   Evite usar funções prontas, como, por exemplo, reverse;</p>
+                <p>Resposta = (O código se encontra em "questão5.js".)</p> 
+            </div>
+        </section>
+    </main>
+    <script src="./questao1.js"></script>
+    <script src="./funcionalidades.js"></script>
+</body>
+</html>
